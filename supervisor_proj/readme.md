@@ -1,7 +1,20 @@
 
 (1) supervisor脚本工具功能概述：
+
 1. 实现一个脚本工具，该脚本提供类似supervisor功能，可以对进程进行管理
 2. 一键查看所有进程运行状态
 3. 单个或批量启动进程，单个或批量停止进程
 4. 提供进程分组功能，可以按组查看进程运行状态，可以按组启动或停止该组内所有进程
 
+
+(2) 拆分脚本功能，抽象函数
+
+1. function get_all_process     返回进程名称字符串  "nginx httpd mysql datanode"
+2. function get_all_group       返回进程组列表字符串
+3. function get_process_info    返回进程详细信息列表字符串
+   详细信息包括：运行状态，pid，cpu，memory，start_time
+   注：该函数可以接收一个参数，参数为进程名称
+4. function get_all_process_by_group        返回进程组内所有进程名称列表字符串
+   例子：DB组 ---> mysql   postgresql   oracle
+
+ 
