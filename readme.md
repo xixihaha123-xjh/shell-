@@ -8,9 +8,7 @@
 3. process_name   列出指定进程的运行信息
 ```
 
-![app_status使用](01-supervisor_proj\pic\1.app_status使用.png)
-
-
+![app_status使用](https://github.com/xixihaha123-xjh/shell-script/blob/master/01-supervisor_proj/pic/1.app_status%E4%BD%BF%E7%94%A8.png?raw=true)
 
 (2) shell 与 mysql数据库交互
 
